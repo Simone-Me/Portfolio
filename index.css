@@ -441,17 +441,10 @@ p a:hover {
   color: #343436;
   opacity: 0.7;
 }
-
-.block h1 {
-  margin: 0 !important;
-}
-
-#efrei-link:hover {
+#efrei-link:hover,
+#bts-link:hover {
   color: #0d7cc0;
 }
 #fdj-link:hover {
   color: #282d87;
-}
-a:-webkit-any-link {
-  text-decoration: none;
 }
