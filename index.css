@@ -258,11 +258,11 @@ a:any-link {
   fill: #de5f5f;
 }
 .section.section--clients {
-  background-color: #343436;
+  background-color: #5cc1b3;
   color: white;
 }
 .section.section--clients svg {
-  fill: #343436;
+  fill: #5cc1b3;
 }
 .section.section--portfolio {
   background-color: orange;
@@ -270,7 +270,7 @@ a:any-link {
 }
 .section.section--portfolio svg {
   top: -20px;
-  fill: orange;
+  fill: #3a99d8;
 }
 .section.section--portfolio svg.bottom {
   top: auto;
@@ -291,6 +291,11 @@ a:any-link {
 .section.section--contact svg {
   fill: white;
 }
+#portfolio3 {
+  top: -50px;
+  background-color: #3a99d8;
+}
+
 /** * Typo */
 h1,
 .h1,
@@ -442,9 +447,16 @@ p a:hover {
   opacity: 0.7;
 }
 #efrei-link:hover,
-#bts-link:hover {
+#bts-link:hover,
+.projet-link {
   color: #0d7cc0;
 }
-#fdj-link:hover {
+#fdj-link:hover,
+#pantani-link:hover,
+.projet-link:hover {
   color: #282d87;
+}
+
+#pantani-link {
+  color: #de5f5f;
 }
