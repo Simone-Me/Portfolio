@@ -6,14 +6,13 @@
     <title>Portfolio M. Simone</title>
     <link rel="icon" type="image/x-icon" href="/images/yellow-circle.png" />
 
-    <script src="https://use.typekit.net/ehh4lya.js"></script>
+    <!-- <script src="https://use.typekit.net/ehh4lya.js"></script>
     <script>
       try {
         Typekit.load({ async: true });
       } catch (e) {}
-    </script>
+    </script> -->
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <script type="text/javascript" src="index.js"></script>
   </head>
   <nav class="side">
     <div class="side__inner">
@@ -47,6 +46,8 @@
   </nav>
 
   <body>
+    <script></script>
+
     <section class="section section--hello" id="hello">
       <div class="section__inner">
         <div class="block">
@@ -231,41 +232,170 @@
             <div class="card">
               <div class="content">
                 <h2 class="title">4MENIC et A-4MENIC</h2>
-                <p>Date : 2023 - 24</p>
-                <p class="intern-text">Description.</p>
-                <button class="btn">détails</button>
+                <p>2023 - 24</p>
+                <p>HTML, CSS, PHP, JAVA, JS, API</p>
+                <p class="intern-text">
+                  EFREI - Conception et développement d'un site web pour la
+                  réservation d'un film et une application pour la gestion d’une
+                  salle de cinéma
+                </p>
+                <button onclick="openDetail('amenic')" class="btn">
+                  4MENIC
+                </button>
+                <button onclick="openDetail('aAmenic')" class="btn">
+                  A-4MENIC
+                </button>
               </div>
             </div>
             <div class="card">
               <div class="content">
                 <h2 class="title">pANTANI</h2>
-                <p class="intern-text">Description.</p>
-                <button class="btn">détails</button>
+                <p>2023 - 24</p>
+                <p>HTML, CSS, PHP, API, JAVA</p>
+                <p class="intern-text">
+                  ALTERNANCE FDJ - Application interne à l'entreprise pour la
+                  gestion de fichers JSON
+                </p>
+                <button onclick="openDetail('pantani')" class="btn">
+                  détails
+                </button>
               </div>
             </div>
             <div class="card">
               <div class="content">
-                <h2 class="title">bON - bON</h2>
-                <p class="intern-text">Description.</p>
-                <button class="btn">détails</button>
+                <h2 class="title">bON - bON et expoPARIS</h2>
+                <p>2023</p>
+                <p>HTML, CSS, PHP</p>
+                <p class="intern-text">
+                  EFREI - Site Web pour la vente de bon bon
+                </p>
+                <button onclick="openDetail('bonbon')" class="btn">
+                  bON - bON
+                </button>
+                <button onclick="openDetail('expo')" class="btn">
+                  expoPARIS
+                </button>
               </div>
             </div>
             <div class="card">
               <div class="content">
                 <h2 class="title">eCUADOR</h2>
-                <p class="intern-text">Description.</p>
-                <button class="btn">détails</button>
+                <p>2022</p>
+                <p>HTML, CSS</p>
+                <p class="intern-text">
+                  EFREI - Site Web d'exposition d'un pays
+                </p>
+                <button onclick="openDetail('ecuador')" class="btn">
+                  détails
+                </button>
               </div>
             </div>
-            <div class="card">
-              <div class="content">
-                <h2 class="title">eXPO in pARIS</h2>
-                <p class="intern-text">Description.</p>
-                <button class="btn">détails</button>
-              </div>
-            </div>
+
             <div><!-- EMPTY CARD TO END THE CAROUSEL --></div>
           </main>
+          <div class="detailsAppBottom" class="block">
+            <div id="amenicDetails">
+              <h2>4MENIC</h2>
+              <h3>
+                Conception et développement du site internet pour la réservation
+                d’une séance de cinéma
+              </h3>
+              <p>Periode : sep - déc 2023</p>
+              <p>Lieu: EFREI</p>
+              <p>Role : Développeur, travail solo.</p>
+              <p>
+                Descriptif : Site web destiné à la recherche des films
+                disponibles aux cinémas, la réservation d’une seance, ou d’une
+                salle entière, et d’un lieu virtuel où consulter les détails ou
+                commentaires des films sortis. Les données des films sont
+                récupérées grâce à une API REST. L’utilisateur-acheteur a la
+                possibilité de gérer son compte personnelle avec une connexion
+                login à partir d’une base de données MySQL et voir les séances
+                passé et futures.
+              </p>
+              <p>Technologie utilisée : HTML, CSS, PHP, JS, API REST</p>
+            </div>
+            <div id="aAmenicDetails">
+              <h2>a-4MENIC</h2>
+              <h3>
+                Conception et développement d'une application pour la gestion
+                d’une salle de cinéma
+              </h3>
+              <p>Periode : janv - mars 2024</p>
+              <p>Lieu: EFREI</p>
+              <p>Role : Développeur, travail solo.</p>
+              <p>
+                Descriptif : Application destiné aux titulaires d’une salle de
+                cinema indépendant. Il permet de gérer les demandes des séances,
+                l’aménagement des salles pour les éventements, la visualisation
+                des données et statistiques liées au cinéma pour faciliter la
+                demande de subvention. Les administrateurs pourrons se connecter
+                au compte personnel pour attribuer chaque séance à un film.
+              </p>
+              <p>Technologie utilisée : JAVA</p>
+            </div>
+            <div id="pantaniDetails">
+              <h2>pANTANI</h2>
+              <h3>
+                Application interne à l'entreprise pour la gestion de fichers
+                JSON
+              </h3>
+              <p>Periode : sept 2023 - juin 2024</p>
+              <p>Lieu: FDJ</p>
+              <p>Role : Développeur, travail en équipe.</p>
+              <p>
+                Descriptif : <br />
+                Application interne à l'entreprise destiné aux automaticiens des
+                tests automatiques au sein de paris sportivs. Un formulaire
+                permet de generer un fichier JSON, nécessaire pour le lancement
+                de test par le bais d'appareils fictives en ligne.
+                <br />
+                Possibilité de creation d'un compte pour la personalisation du
+                formulaire ou de fichers et sauvarde de données prédéfinies.
+                <br />
+                Gestion des droits des utilisateurs et modifications de
+                formulaire.
+              </p>
+              <p>Technologie utilisée : HTML, CSS, PHP, JS</p>
+            </div>
+            <div id="bonbonDetails">
+              <h2>bON-bON</h2>
+              <h3>Site Web pour la vente de bon bon</h3>
+              <p>Periode : fév - mai 2023</p>
+              <p>Lieu: EFREI</p>
+              <p>Role : Développeur, travail solo.</p>
+              <p>
+                Descriptif : <br />
+                Vetrine d'un site web en plusiers pages avec gestion des compte
+                personnelle et gestion d'achats.
+              </p>
+              <p>Technologie utilisée : HTML, CSS, PHP</p>
+            </div>
+            <div id="ecuadorDetails">
+              <h2>eCUADOR</h2>
+              <h3>Site Web d'exposition d'un pays</h3>
+              <p>Periode : sep - déc 2022</p>
+              <p>Lieu: EFREI</p>
+              <p>Role : Développeur, travail solo.</p>
+              <p>
+                Descriptif : <br />
+                Vetrine d'un site web en plusiers pages.
+              </p>
+              <p>Technologie utilisée : HTML, CSS</p>
+            </div>
+            <div id="expoDetails">
+              <h2>eXPO PARIS</h2>
+              <h3>TP - Site Web de consultation des expo à Paris</h3>
+              <p>Periode : mai 2023</p>
+              <p>Lieu: EFREI</p>
+              <p>Role : Développeur, travail solo.</p>
+              <p>
+                Descriptif : <br />
+                Vetrine d'un site web en plusiers pages.
+              </p>
+              <p>Technologie utilisée : HTML, CSS, PHP</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -283,31 +413,12 @@
       </svg>
       <div class="section__inner">
         <div class="block">
-          <h2>Projet #2</h2>
-          <p>PANTANI, en l'honneur de Marco Panani.</p>
+          <h2>Veille technologique</h2>
+          <p>.</p>
         </div>
       </div>
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-        width="100%"
-        height="100"
-        viewBox="0 0 100 102"
-        preserveAspectRatio="none"
-        class="bottom"
-      >
-        <path d="M0 0 L50 100 L100 0 Z"></path>
-      </svg>
-    </section>
-
-    <section class="section section--portfolio" id="portfolio3">
-      <div class="section__inner">
-        <div class="block">
-          <h2>Projet #3</h2>
-          <p>TeaCosy, BonBonSellers, ExpoParis.</p>
-        </div>
-      </div>
-      <svg
+        id="triangle-svg"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
         width="100%"
@@ -355,4 +466,5 @@
       </div>
     </section>
   </body>
+  <script type="text/javascript" src="index.js"></script>
 </html>

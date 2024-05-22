@@ -273,6 +273,9 @@ a:any-link {
   top: -20px;
   fill: #3a99d8;
 }
+#triangle-svg {
+  fill: orange;
+}
 .section.section--portfolio svg.bottom {
   top: auto;
   bottom: -50px;
@@ -666,4 +669,13 @@ p a:hover {
   .card:focus-within .content > *:not(.title) {
     transition-duration: 0s;
   }
+}
+.detailsAppBottom {
+  display: inline-block;
+  width: 100%;
+}
+.detailsAppBottom > * {
+  display: none;
+  border: #0d0d0d solid 2px;
+  margin-right: auto;
 }
