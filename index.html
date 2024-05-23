@@ -141,7 +141,7 @@
             2 ans pour devenir professionnel de l’informatique.
           </p>
           <br />
-          <p>
+          <p style="font-size: 1rem">
             Le cursus en Solutions Logicielles et Applications Métiers <br />
             (SLAM) vise à : <br /><br />
           </p>
@@ -159,7 +159,7 @@
               managériale;
             </li>
             <br />
-            <p>
+            <p style="font-size: 1rem">
               En preparation des examens j'ai réalisé les projets
               <span class="projet-link"><a href="#portfolio">AMENIC</a></span>
               et
@@ -173,14 +173,27 @@
           <p>________________________________________________________</p>
           <br />
 
-          <h2>Compétences acquise :</h2>
-          <p class="lead">
-            HTML + CSS <br />
-            Java <br />
-            JS <br />
-            PHP <br />
-            SQL
-          </p>
+          <h2>Compétences :</h2>
+          <div class="competence">
+            <div>
+              <p class="lead">
+                HTML + CSS <br />
+                Java <br />
+                JS <br />
+                PHP <br />
+                SQL
+              </p>
+              <img style="width: 15vw" src="images/mysql-logo.png" alt="" />
+            </div>
+            <div class="logo-area">
+              <img src="images/java-logo.png" alt="" />
+              <img src="images/html-css-logo.png" alt="" />
+            </div>
+            <div class="logo-area">
+              <img src="images/js-logo.png" alt="" />
+              <img src="images/php-logo.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -239,12 +252,14 @@
                   réservation d'un film et une application pour la gestion d’une
                   salle de cinéma
                 </p>
-                <button onclick="openDetail('amenic')" class="btn">
-                  4MENIC
-                </button>
-                <button onclick="openDetail('aAmenic')" class="btn">
-                  A-4MENIC
-                </button>
+                <div>
+                  <button onclick="openDetail('amenic')" class="btn">
+                    4MENIC
+                  </button>
+                  <button onclick="openDetail('aAmenic')" class="btn">
+                    A-4MENIC
+                  </button>
+                </div>
               </div>
             </div>
             <div class="card">
@@ -269,12 +284,14 @@
                 <p class="intern-text">
                   EFREI - Site Web pour la vente de bon bon
                 </p>
-                <button onclick="openDetail('bonbon')" class="btn">
-                  bON - bON
-                </button>
-                <button onclick="openDetail('expo')" class="btn">
-                  expoPARIS
-                </button>
+                <div>
+                  <button onclick="openDetail('bonbon')" class="btn">
+                    bON - bON
+                  </button>
+                  <button onclick="openDetail('expo')" class="btn">
+                    expoPARIS
+                  </button>
+                </div>
               </div>
             </div>
             <div class="card">
@@ -293,15 +310,22 @@
 
             <div><!-- EMPTY CARD TO END THE CAROUSEL --></div>
           </main>
-          <div class="detailsAppBottom" class="block">
+          <p id="pointToGO"></p>
+          <div class="detailsAppBottom section" class="block">
             <div id="amenicDetails">
               <h2>4MENIC</h2>
               <h3>
                 Conception et développement du site internet pour la réservation
                 d’une séance de cinéma
               </h3>
+              <img
+                height="auto"
+                width="80%"
+                src="images/homepage_4MENIC - Copia.png"
+                alt=""
+              />
               <p>Periode : sep - déc 2023</p>
-              <p>Lieu: EFREI</p>
+              <p>Lieu: eFREI</p>
               <p>Role : Développeur, travail solo.</p>
               <p>
                 Descriptif : Site web destiné à la recherche des films
@@ -321,6 +345,12 @@
                 Conception et développement d'une application pour la gestion
                 d’une salle de cinéma
               </h3>
+              <img
+                height="auto"
+                width="80%"
+                src="images/login-admin.png"
+                alt=""
+              />
               <p>Periode : janv - mars 2024</p>
               <p>Lieu: EFREI</p>
               <p>Role : Développeur, travail solo.</p>
@@ -340,6 +370,12 @@
                 Application interne à l'entreprise pour la gestion de fichers
                 JSON
               </h3>
+              <img
+                height="auto"
+                width="80%"
+                src="images/homepage-pantani.png"
+                alt=""
+              />
               <p>Periode : sept 2023 - juin 2024</p>
               <p>Lieu: FDJ</p>
               <p>Role : Développeur, travail en équipe.</p>
@@ -394,6 +430,15 @@
                 Vetrine d'un site web en plusiers pages.
               </p>
               <p>Technologie utilisée : HTML, CSS, PHP</p>
+            </div>
+            <div class="btn-area" style="display: none">
+              <button onclick="rotateTab('back')" class="back-btn">
+                &#8592;
+              </button>
+              <button onclick="closeTab()" class="close-btn">&times;</button>
+              <button onclick="rotateTab('next')" class="next-btn">
+                &#8594;
+              </button>
             </div>
           </div>
         </div>
