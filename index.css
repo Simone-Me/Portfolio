@@ -709,6 +709,7 @@ p a:hover {
   outline-width: 1px;
   outline-offset: -10px;
   border-radius: 8% 8% 0% 0%;
+  width: 55vw;
 }
 
 .detailsVeilleBottom > * {
