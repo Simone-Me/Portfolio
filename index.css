@@ -451,18 +451,16 @@ p a:hover {
   color: #343436;
   opacity: 0.7;
 }
-#efrei-link:hover,
-#bts-link:hover,
-.projet-link:hover {
+.projet-link:hover,
+.general-link:hover {
   color: #0d7cc0;
 }
-#fdj-link:hover,
-#pantani-link:hover,
 .projet-link,
-#bts-link {
+.general-link,
+.general-link2:hover {
   color: #282d87;
 }
-#pantani-link {
+.general-link2 {
   color: #de5f5f;
 }
 
@@ -720,7 +718,21 @@ p a:hover {
   display: block;
   margin: 1rem auto;
 }
-.btn-area,
+.detail p {
+  padding-bottom: 1rem;
+  font-size: 0.75rem;
+}
+#about ul {
+  font-size: 0.75rem;
+  position: relative;
+  left: 5vw;
+}
+#about ul li,
+#about p,
+#clients p {
+  margin-bottom: 0.75rem;
+}
+#about .btn-area,
 .btn-area-veille {
   justify-content: space-evenly;
   column-gap: 1rem;
