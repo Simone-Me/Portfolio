@@ -472,7 +472,8 @@ p a:hover {
   --font-serif: "Cardo", serif;
 }
 
-.page-content {
+.page-content,
+.page-content2 {
   font-family: var(--font-sans);
   display: grid;
   grid-auto-columns: calc(100% - 20rem);
@@ -484,7 +485,8 @@ p a:hover {
   width: 130vw;
   margin: 0 auto;
 }
-.page-content::-webkit-scrollbar {
+.page-content::-webkit-scrollbar,
+.page-content2::-webkit-scrollbar {
   display: none;
 }
 
